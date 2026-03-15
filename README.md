@@ -104,33 +104,19 @@ L_total = L_CrossEntropy + (1 - DSC)
 ## Installation
 
 ```bash
-git clone https://github.com/your-username/voc-segmentation.git
-cd voc-segmentation
-pip install -r requirements.txt
+git clone https: https://github.com/Eshani-R-Sawant/PASCAL-VOC-Efficient-Segmentation-Challenge/
+
 ```
 
 ---
 
-## Dataset Preparation
 
-Place your VOC dataset in:
-
-```
-./data/VOCdevkit
-```
-
-Generate SAM masks for the training split:
-
-```bash
-python generate_sam_mask1.py --xml_dir ./data/Annotations --output_dir ./data/SAM_Segmentation_Maps1
-```
-
----
 
 ## Training
 
+
 ```bash
-python train.py --batch_size 16 --epochs 170 --lr 1e-4
+python train.py 
 ```
 
 ---
@@ -141,13 +127,16 @@ The model can be evaluated using our internal script or the Hugging Face Evaluat
 
 **Internal**
 ```bash
-python evaluate.py --checkpoint best_model.pt
+python3 inference.py --in_dir classroom_test/JPEGImages --out_dir output --gt_dir classroom_test/SegmentationClass 
 ```
 
 **External**
 
 ```
-voc-seg-evaluator on Hugging Face
+https://huggingface.co/spaces/priyadip/voc-seg-evaluator
+1)Here the user have to add the checkpoints file.
+2)model.py
+3)Test_images on which the segmentation need to be genrated
 ```
 
 ---
@@ -157,20 +146,8 @@ voc-seg-evaluator on Hugging Face
 | Metric | Score |
 |------|------|
 | Mean Dice (DSC) | ~76.2% |
-| Model FLOPs | (Varies by backbone) |
+| Model FLOPs | 0.241 |
 | Inference Speed | Real-time on CPU/Mobile GPU |
 
 **Note:**  
 Detailed logs and class-wise Dice scores are generated in the `outputs/` folder after each validation epoch.
-
----
-
-# 📜 Citations and References
-
-He, K., et al. **"Segment Anything."** arXiv:2304.02643.
-
-Chen, L. C., et al. **"Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation."**
-
-Wang, Q., et al. **"ECA-Net: Efficient Channel Attention for Deep Convolutional Neural Networks."**
-
-Kamann, C., & Rother, C. **"Increasing the Robustness of Semantic Segmentation Models with Painting-by-Numbers."**

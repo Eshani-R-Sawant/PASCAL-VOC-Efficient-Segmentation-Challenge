@@ -127,7 +127,11 @@ The model can be evaluated using our internal script or the Hugging Face Evaluat
 ![Ground Truth vs Predicted Segmentation](images/eval.jpg)
 **Internal**
 ```bash
-python inference.py --in_dir=/path/test_images/ --out_dir=/path/<group_no>_output/ 
+1)Code for inferece.py is stored in the Inference folder
+cd Inference
+2)We need to add the input test images in the Input folder and the Output folder can be used or a different Output folder location can be mentioned here.
+3)Execute this command where in input  --in_dir give the full path of input test images and in the --out_dir give the full path of the output directory here.
+python inference.py --in_dir=/path/test_images/ --out_dir=/path/03_output/ 
 ```
 
 **External**

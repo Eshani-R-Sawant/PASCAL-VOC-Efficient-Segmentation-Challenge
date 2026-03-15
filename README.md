@@ -112,7 +112,7 @@ git clone https: https://github.com/Eshani-R-Sawant/PASCAL-VOC-Efficient-Segment
 
 
 
-## Training
+## If Training is needed to be done here 
 
 
 ```bash
@@ -127,16 +127,17 @@ The model can be evaluated using our internal script or the Hugging Face Evaluat
 
 **Internal**
 ```bash
-python3 inference.py --in_dir classroom_test/JPEGImages --out_dir output --gt_dir classroom_test/SegmentationClass 
+python inference.py --in_dir=/path/test_images/ --out_dir=/path/<group_no>_output/ 
 ```
 
 **External**
 
 ```
 https://huggingface.co/spaces/priyadip/voc-seg-evaluator
+
 1)Here the user have to add the checkpoints file.
-2)model.py
-3)Test_images on which the segmentation need to be genrated
+2)model.py file will be added 
+3)Test_images on which the segmentation need to be generated here
 ```
 
 ---
@@ -145,8 +146,8 @@ https://huggingface.co/spaces/priyadip/voc-seg-evaluator
 
 | Metric | Score |
 |------|------|
-| Mean Dice (DSC) | ~76.2% |
-| Model FLOPs | 0.241 |
+|Mean Dice Score on Test Set:| 0.8235|
+|Model Complexity (FLOPs)| 0.241 GFLOPs|
 | Inference Speed | Real-time on CPU/Mobile GPU |
 
 **Note:**  

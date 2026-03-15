@@ -124,7 +124,7 @@ python train.py
 ## Evaluation
 
 The model can be evaluated using our internal script or the Hugging Face Evaluator Space:
-
+![Ground Truth vs Predicted Segmentation](images/eval.jpg)
 **Internal**
 ```bash
 python inference.py --in_dir=/path/test_images/ --out_dir=/path/<group_no>_output/ 

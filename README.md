@@ -4,7 +4,7 @@ This repository implements a professional-grade semantic segmentation pipeline u
 
 ---
 
-# 🚀 Key Features
+#  Key Features
 
 **SAM-Powered Pipeline:**  
 Automated generation of pixel-level segmentation masks using Meta's Segment Anything Model (SAM) from PASCAL VOC bounding box annotations.
@@ -23,7 +23,7 @@ Dual-optimization using a combination of Weighted Cross-Entropy and Multi-Class 
 
 ---
 
-# 🏗️ Methodology and Project Pipeline
+#  Methodology and Project Pipeline
 
 The project follows a multi-stage workflow designed to maximize the utility of the PASCAL VOC 2012 dataset and its 17,000+ available images.
 
@@ -73,7 +73,7 @@ A high-resolution skip-connection decoder fuses low-level features (from MobileN
 
 ---
 
-# 🛠️ Advanced Training Techniques
+#  Advanced Training Techniques
 
 To ensure the model generalizes to real-world image corruptions, we utilize several state-of-the-art augmentation strategies:
 
@@ -86,7 +86,7 @@ To ensure the model generalizes to real-world image corruptions, we utilize seve
 
 ---
 
-# 📊 Loss Function & Metrics
+#  Loss Function & Metrics
 
 The framework employs a Hybrid Loss to align training directly with the competition ranking metric (Dice Similarity Coefficient):
 
@@ -99,7 +99,7 @@ L_total = L_CrossEntropy + (1 - DSC)
 
 ---
 
-# 🚀 Setup and Usage
+#  Setup and Usage
 
 ## Installation
 
@@ -141,7 +141,7 @@ https://huggingface.co/spaces/priyadip/voc-seg-evaluator
 
 ---
 
-# 📈 Evaluation Results
+# Evaluation Results
 
 | Metric | Score |
 |------|------|

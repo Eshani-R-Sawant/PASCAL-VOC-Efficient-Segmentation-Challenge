@@ -121,23 +121,23 @@ python train.py
 
 ---
 ## Requirement:- 
-Core Deep Learning
+Core Deep Learning:- 
 torch
 torchvision
 numpy
 
-Image Processing and Augmentation
+Image Processing and Augmentation:- 
 opencv-python
 Pillow
 albumentations
 
-Model Profiling (GFLOPs calculation)
+Model Profiling (GFLOPs calculation):- 
 thop
 
-Progress Bar and Utilities
+Progress Bar and Utilities:- 
 tqdm
 
-Evaluation and Math
+Evaluation and Math:- 
 scipy
 
 ## Evaluation
